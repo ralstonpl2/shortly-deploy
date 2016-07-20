@@ -4,6 +4,12 @@
   "engines": {
     "node": "0.12.0"
   },
+  "scripts": {
+  "start": "node server.js",
+  "postinstall": "bower install && grunt build",
+  "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+  "heroku-postbuild": "echo This runs afterwards."
+},
   "description": "shortly using express",
   "main": "server.js",
   "repository": "",
